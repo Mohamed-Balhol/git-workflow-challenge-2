@@ -1,4 +1,4 @@
-# Countdown Timer
+
 try:
     number = int(input("Enter a positive integer: "))
     
