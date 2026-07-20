@@ -51,6 +51,11 @@ nav a {
   transition: 0.3s;
 }
 
+nav a i {
+    margin-right: 8px;
+    font-size: 18px;
+}
+
 nav a:hover {
   color: #58a6ff;
 }
