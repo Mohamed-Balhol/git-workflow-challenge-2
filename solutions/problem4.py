@@ -1,4 +1,4 @@
-# جمع الارقام 
+# 12جمع الارقام 
 def sum_of_numbers():
   try:
     num = int(

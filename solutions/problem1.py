@@ -1,3 +1,4 @@
+#  14 الحاسبة البسيطة
 def simple_calculator():
   try:
     num1 = float(input("Enter the first number: "))

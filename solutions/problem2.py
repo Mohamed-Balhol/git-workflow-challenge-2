@@ -1,12 +1,28 @@
-def calculate_rectangle_area():
-  try:
-    length = float(input("Enter the length of the rectangle: "))
-    width = float(input("Enter the width of the rectangle: "))
-    area = length * width
-    print(f"The area of the rectangle is: {area}")
-  except ValueError:
-    print("Error: Please enter valid numbers for length and width.")
+#لعبة تخمين الارقام7 
+import random
+
+
+def number_guessing_game():
+  print("Welcome to the Number Guessing Game!")
+  # اختيار رقم عشوائي بين 1 و 100
+  secret_number = random.randint(1, 100)
+  attempts = 0
+
+  while True:
+    try:
+      guess = int(input("Guess a number between 1 and 100: "))
+      attempts += 1
+
+      if guess < secret_number:
+        print("Too low! Try again.")
+      elif guess > secret_number:
+        print("Too high! Try again.")
+      else:
+        print(f"Congratulations! You found the number in {attempts} attempts.")
+        break
+    except ValueError:
+      print("Error: Please enter a valid integer.")
 
 
 if __name__ == "__main__":
-  calculate_rectangle_area()
+  number_guessing_game()
