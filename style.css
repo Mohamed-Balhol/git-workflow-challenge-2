@@ -19,6 +19,16 @@ body {
   line-height: 1.6;
 }
 
+/* 1️⃣ [تعديل 1]: تنسيق شريط التنبيه الأعلى (Top Banner) */
+.top-banner {
+  background: linear-gradient(90deg, #0d6efd, #0d1117);
+  color: white;
+  text-align: center;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
 /* ===========================
    Header
 =========================== */
@@ -68,8 +78,10 @@ nav a:hover {
   transition: 0.3s;
 }
 
+/* 2️⃣ [تعديل 2]: إحداث تأثير حركي عند التحويم على زر اللوجن */
 .login-btn:hover {
   background-color: #218739;
+  transform: scale(1.05);
 }
 
 /* ===========================
@@ -133,6 +145,15 @@ nav a:hover {
   border-radius: 8px;
 
   cursor: pointer;
+  
+  /* 3️⃣ [تعديل 3]: إضافة تأثير انتقال ناعم للأزرار الرئيسية */
+  transition: all 0.3s ease;
+}
+
+.primary-btn:hover {
+  background-color: #0b5ed7;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(13, 110, 253, 0.3);
 }
 
 .secondary-btn {
@@ -147,6 +168,47 @@ nav a:hover {
   border-radius: 8px;
 
   cursor: pointer;
+
+  /* 4️⃣ [تعديل 4]: تأثير التحويم على الأزرار الثانوية */
+  transition: all 0.3s ease;
+}
+
+.secondary-btn:hover {
+  background-color: #0d6efd;
+  color: white;
+}
+
+/* 5️⃣ [تعديل 5]: تنسيق قسم خطوات الـ Git Workflow الجديد */
+.workflow-section {
+  padding: 60px 80px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.workflow-section h2 {
+  margin-bottom: 40px;
+}
+
+.steps-grid {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.step-card {
+  background: #f8f9fa;
+  border-left: 4px solid #0d6efd;
+  padding: 25px;
+  border-radius: 8px;
+  width: 280px;
+  text-align: left;
+}
+
+.step-num {
+  font-size: 20px;
+  font-weight: bold;
+  color: #0d6efd;
 }
 
 /* ===========================
@@ -187,6 +249,9 @@ nav a:hover {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
 
   transition: 0.3s;
+
+  /* 6️⃣ [تعديل 6]: جعل موقع عناصر البطاقة نسبياً لضبط الأوسمة */
+  position: relative;
 }
 
 .card:hover {
@@ -197,6 +262,22 @@ nav a:hover {
   margin-bottom: 15px;
 
   color: #0d6efd;
+}
+
+.card .icon {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.card-tag {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: #eef2f7;
+  font-size: 11px;
+  padding: 3px 8px;
+  border-radius: 10px;
+  font-weight: bold;
 }
 
 /* ===========================
@@ -235,6 +316,15 @@ nav a:hover {
   padding: 30px;
 
   border-radius: 12px;
+
+  /* 7️⃣ [تعديل 7]: تحسين مظهر بطاقات الإحصائيات مع حدود ناعمة */
+  border: 1px solid #e0e0e0;
+  transition: 0.3s;
+}
+
+.stat:hover {
+  background-color: #eef6ff;
+  border-color: #0d6efd;
 }
 
 .stat h3 {
@@ -279,6 +369,12 @@ nav a:hover {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
 }
 
+/* 8️⃣ [تعديل 8]: تمييز بطاقة تقييم ماريا بلون خاص وإطار مميز */
+.highlight-review {
+  border: 2px solid #0d6efd;
+  background-color: #f0f7ff;
+}
+
 .review h3 {
   margin-bottom: 12px;
 
@@ -301,14 +397,35 @@ nav a:hover {
   margin-bottom: 20px;
 }
 
-.contact p {
-  margin: 10px 0;
+/* 9️⃣ [تعديل 9]: تنسيق نموذج التراسل السريع داخل قسم التواصل */
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.quick-contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 300px;
+}
+
+.quick-contact-form input {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
 }
 
 /* ===========================
    Footer
 =========================== */
 
+/* 🔟 [تعديل 10]: تحسين مظهر الـ Footer وإضافة روابط تفاعلية */
 footer {
   background-color: #24292f;
 
@@ -317,4 +434,21 @@ footer {
   text-align: center;
 
   padding: 30px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.footer-links a {
+  color: #58a6ff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
 }
