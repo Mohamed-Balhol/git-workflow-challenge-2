@@ -1,12 +1,13 @@
-# Countdown Timer
+# Problem 2: حساب مساحة المستطيل
+
 try:
-    number = int(input("Enter a positive integer: "))
-    
-    if number < 0:
-        print("Please enter a positive number.")
+    length = float(input("أدخل طول المستطيل: "))
+    width = float(input("أدخل عرض المستطيل: "))
+
+    if length <= 0 or width <= 0:
+        print("الرجاء إدخال أرقام موجبة وأكبر من الصفر للطول والعرض.")
     else:
-        while number >= 0:
-            print(number)
-            number -= 1
+        area = length * width
+        print(f"\nمساحة المستطيل هي: {area}")
 except ValueError:
-    print("Error! Please enter integers only.")
+    print("إدخال خاطئ! الرجاء إدخال أرقام صحيحة أو عشرية فقط.")
