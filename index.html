@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -6,144 +6,168 @@
     <title>Git & GitHub Workshop</title>
 
     <link rel="stylesheet" href="style.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   </head>
   <body>
     <!-- ================= Header ================= -->
-
     <header>
-      <div class="logo">Git Workshop</div>
+      <div class="logo">Git<span>Workshop</span></div>
 
       <nav>
-        <a href="#">Home</a>
-        <a href="#">Courses</a>
-        <a href="#">Roadmap</a>
-        <a href="#">Community</a>
-        <a href="#">Contact</a>
+        <a href="#home">Home</a>
+        <a href="#topics">Topics</a>
+        <a href="#stats">Stats</a>
+        <a href="#testimonials">Reviews</a>
+        <a href="#contact">Contact</a>
       </nav>
 
       <button class="login-btn">Login</button>
     </header>
 
     <!-- ================= Hero ================= -->
+    <section class="hero" id="home">
+      <span class="badge">Modern Version Control</span>
 
-    <section class="hero">
-      <span class="badge"> Version Control </span>
+      <h1>Master Git & GitHub Like Professionals</h1>
 
-      <h1>Learn Git & GitHub Like Professionals</h1>
-
-      <p>Master version control and collaborate with teams using Git Flow.</p>
+      <p>Elevate your software development workflow, master branching strategies, and seamlessly collaborate with engineering teams worldwide.</p>
 
       <div class="hero-buttons">
-        <button class="primary-btn">Start Learning</button>
-
-        <button class="secondary-btn">GitHub Repository</button>
+        <button class="primary-btn">Start Learning Now</button>
+        <button class="secondary-btn">Explore GitHub Repo</button>
       </div>
     </section>
 
     <!-- ================= Features ================= -->
-
-    <section class="features">
-      <h2>Workshop Topics</h2>
+    <section class="features" id="topics">
+      <div class="section-title">
+        <h2>Workshop Topics</h2>
+        <p>Everything you need to master source control management</p>
+      </div>
 
       <div class="cards">
         <div class="card">
-          <h3>Version Control</h3>
-
-          <p>Learn why version control is important.</p>
+          <h3>Version Control Systems</h3>
+          <p>Understand why tracking software history and changes is critical in modern software engineering.</p>
         </div>
 
         <div class="card">
-          <h3>Git Basics</h3>
-
-          <p>Commits, branches and merging.</p>
+          <h3>Git Fundamentals</h3>
+          <p>Master core commands including commits, interactive branching, rebasing, and conflict resolution.</p>
         </div>
 
         <div class="card">
-          <h3>GitHub</h3>
-
-          <p>Remote repositories and collaboration.</p>
+          <h3>GitHub & Remote Sync</h3>
+          <p>Collaborate effectively using remote repositories, pull requests, code reviews, and forks.</p>
         </div>
 
         <div class="card">
-          <h3>Git Flow</h3>
-
-          <p>Professional workflow used in companies.</p>
+          <h3>Professional Git Flow</h3>
+          <p>Implement standard industry branching models used by top tech companies and open-source teams.</p>
         </div>
       </div>
     </section>
 
     <!-- ================= Statistics ================= -->
-
-    <section class="statistics">
-      <h2>Workshop Statistics</h2>
+    <section class="statistics" id="stats">
+      <div class="section-title">
+        <h2>Workshop Achievements</h2>
+        <p>Real impact driven by hands-on practice</p>
+      </div>
 
       <div class="stats">
         <div class="stat">
-          <h3>150+</h3>
-
-          <p>Students</p>
+          <h3>250+</h3>
+          <p>Active Students</p>
         </div>
 
         <div class="stat">
-          <h3>45</h3>
-
-          <p>Repositories</p>
+          <h3>60+</h3>
+          <p>Repositories Created</p>
         </div>
 
         <div class="stat">
-          <h3>900+</h3>
-
-          <p>Commits</p>
+          <h3>1,500+</h3>
+          <p>Commits Pushed</p>
         </div>
 
         <div class="stat">
-          <h3>35</h3>
-
-          <p>Pull Requests</p>
+          <h3>85+</h3>
+          <p>Pull Requests Merged</p>
         </div>
       </div>
     </section>
 
     <!-- ================= Testimonials ================= -->
-
-    <section class="testimonials">
-      <h2>Students Feedback</h2>
+    <section class="testimonials" id="testimonials">
+      <div class="section-title">
+        <h2>Students Feedback</h2>
+        <p>See what learners have to say about this practical workshop</p>
+      </div>
 
       <div class="reviews">
         <div class="review">
+          <div class="avatar">M</div>
           <h3>Mohammed</h3>
-
-          <p>Git became much easier after this workshop.</p>
+          <p>"Git became much easier after this workshop. Resolving merge conflicts is no longer intimidating!"</p>
         </div>
 
         <div class="review">
+          <div class="avatar">A</div>
           <h3>Ahmed</h3>
-
-          <p>The practical challenges were amazing.</p>
+          <p>"The practical challenges were amazing and gave me the confidence to contribute to team projects."</p>
         </div>
 
         <div class="review">
+          <div class="avatar">AL</div>
           <h3>Ali</h3>
+          <p>"I finally understood Pull Requests and how feature branches work in a real-world team setup."</p>
+        </div>
 
-          <p>I finally understood Pull Requests.</p>
+        <!-- Feedback الخاص بكِ -->
+        <div class="review highlight">
+          <div class="avatar user-avatar">AF</div>
+          <h3>Afnan</h3>
+          <p>"Fantastic hands-on challenge! To make upcoming challenges even better, adding live interactive coding playgrounds or video walkthroughs for complex Git scenarios would be an awesome addition!"</p>
         </div>
       </div>
     </section>
 
     <!-- ================= Contact ================= -->
+    <section class="contact" id="contact">
+      <div class="contact-card">
+        <h2>Have Questions or Suggestions?</h2>
+        <p>Reach out to us or check out our project source code on GitHub.</p>
 
-    <section class="contact">
-      <h2>Contact Us</h2>
-
-      <p>Email : workshop@example.com</p>
-
-      <p>GitHub : github.com/example</p>
+        <div class="contact-info">
+          <p>Email: <span>workshop@example.com</span></p>
+          <p>GitHub: <span>github.com/example/git-workshop</span></p>
+        </div>
+      </div>
     </section>
 
     <!-- ================= Footer ================= -->
-
     <footer>
-      <p>Git & GitHub Workshop © 2026</p>
+      <div class="footer-container">
+        <div class="footer-brand">
+          <div class="logo">Git<span>Workshop</span></div>
+          <p>Empowering developers with professional version control skills.</p>
+        </div>
+        
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#topics">Topics</a>
+          <a href="#stats">Stats</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>Git & GitHub Workshop &copy; 2026 — Designed & Developed by <strong>Afnan</strong></p>
+      </div>
     </footer>
   </body>
 </html>
