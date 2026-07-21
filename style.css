@@ -247,6 +247,12 @@ nav a:hover {
 
   color: #0d6efd;
 }
+.stat:hover {
+  transform: translateY(-8px);
+  background-color: #bbe6ff;
+  box-shadow: 0 5px 15px rgba(18, 33, 66, 0.08);
+}
+
 
 /* ===========================
    Testimonials
@@ -282,6 +288,11 @@ nav a:hover {
   padding: 25px;
 
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+.review:hover {
+  transform: translateY(-8px);
+  background-color: #bbe6ff;
+  box-shadow: 0 5px 15px rgba(18, 33, 66, 0.08);
 }
 
 .review h3 {
