@@ -61,7 +61,7 @@ nav a:hover {
 }
 
 .login-btn {
-  background-color: #2ea44f;
+  background-color: #abebbd;
   color: white;
 
   border: none;
@@ -74,7 +74,7 @@ nav a:hover {
 }
 
 .login-btn:hover {
-  background-color: #218739;
+  background-color: #05200b;
 }
 
 /* ===========================
