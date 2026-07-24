@@ -51,12 +51,17 @@ nav a {
   transition: 0.3s;
 }
 
+nav a i {
+    margin-right: 8px;
+    font-size: 18px;
+}
+
 nav a:hover {
   color: #58a6ff;
 }
 
 .login-btn {
-  background-color: #2ea44f;
+  background-color: #abebbd;
   color: white;
 
   border: none;
@@ -69,7 +74,7 @@ nav a:hover {
 }
 
 .login-btn:hover {
-  background-color: #218739;
+  background-color: #05200b;
 }
 
 /* ===========================
@@ -253,6 +258,12 @@ nav a:hover {
 
   color: #0d6efd;
 }
+.stat:hover {
+  transform: translateY(-8px);
+  background-color: #bbe6ff;
+  box-shadow: 0 5px 15px rgba(18, 33, 66, 0.08);
+}
+
 
 /* ===========================
    Testimonials
@@ -288,6 +299,11 @@ nav a:hover {
   padding: 25px;
 
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+.review:hover {
+  transform: translateY(-8px);
+  background-color: #bbe6ff;
+  box-shadow: 0 5px 15px rgba(18, 33, 66, 0.08);
 }
 
 .review h3 {
