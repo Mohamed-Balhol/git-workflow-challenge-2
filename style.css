@@ -82,41 +82,40 @@ color:#58a6ff;
    Hero
 =========================== */
 
-.hero {
-  text-align: center;
-  padding: 80px 20px;
+.hero{
+
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+gap:80px;
+
+padding:100px 10%;
+
+
 }
 
-.badge {
-  display: inline-block;
 
-  background-color: #e3f2fd;
+.hero h1{
 
-  color: #1565c0;
+font-size:60px;
 
-  padding: 8px 18px;
+line-height:1.2;
 
-  border-radius: 30px;
-
-  margin-bottom: 20px;
-
-  font-weight: bold;
 }
 
-.hero h1 {
-  font-size: 52px;
 
-  margin-bottom: 20px;
-}
+.hero p{
 
-.hero p {
-  width: 700px;
+max-width:600px;
 
-  margin: auto;
+color:#8b949e;
 
-  color: #666;
+font-size:20px;
 
-  margin-bottom: 35px;
 }
 
 .hero-buttons {
