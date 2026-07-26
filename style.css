@@ -421,3 +421,51 @@ color:#58a6ff;
 font-size:35px;
 
 }
+.challenge{
+
+padding:80px;
+
+text-align:center;
+
+}
+
+
+.challenge-box{
+
+
+background:#161b22;
+
+max-width:500px;
+
+margin:auto;
+
+padding:40px;
+
+border-radius:20px;
+
+border:1px solid #30363d;
+
+
+}
+
+
+.challenge button{
+
+
+background:#238636;
+
+color:white;
+
+border:none;
+
+padding:12px 25px;
+
+border-radius:8px;
+
+margin-top:20px;
+
+cursor:pointer;
+
+
+}
+
