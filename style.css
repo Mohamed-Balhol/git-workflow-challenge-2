@@ -337,3 +337,38 @@ footer {
 
   padding: 30px;
 }
+.terminal{
+
+
+background:#010409;
+
+border:1px solid #30363d;
+
+border-radius:15px;
+
+width:350px;
+
+padding:20px;
+
+box-shadow:0 20px 40px #000;
+
+
+}
+
+
+.terminal-header{
+
+color:#ff7b72;
+
+margin-bottom:20px;
+
+}
+
+
+.terminal pre{
+
+color:#7ee787;
+
+font-size:15px;
+
+}
