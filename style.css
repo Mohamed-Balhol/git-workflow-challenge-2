@@ -28,59 +28,56 @@ line-height:1.6;
 =========================== */
 
 header {
-  background-color: #24292f;
-  color: white;
 
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 
-  padding: 20px 80px;
+background:#161b22;
+
+padding:20px 70px;
+
+border-bottom:1px solid #30363d;
+
+position:sticky;
+
+top:0;
+
+z-index:100;
+
+
 }
 
-.logo {
-  font-size: 28px;
-  font-weight: bold;
+
+.logo{
+
+font-size:26px;
+
+font-weight:bold;
+
+color:#58a6ff;
+
 }
 
-nav {
-  display: flex;
-  gap: 25px;
+
+.logo i{
+
+color:white;
+
+margin-right:10px;
+
 }
 
-nav a {
-  text-decoration: none;
-  color: white;
-  font-weight: 500;
-  transition: 0.3s;
+
+nav a{
+
+color:#c9d1d9;
+
 }
 
-nav a i {
-    margin-right: 8px;
-    font-size: 18px;
+
+nav a:hover{
+
+color:#58a6ff;
+
 }
-
-nav a:hover {
-  color: #58a6ff;
-}
-
-.login-btn {
-  background-color: #abebbd;
-  color: white;
-
-  border: none;
-  padding: 12px 20px;
-
-  border-radius: 8px;
-
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.login-btn:hover {
-  background-color: #05200b;
-}
-
 /* ===========================
    Hero
 =========================== */
