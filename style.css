@@ -372,3 +372,52 @@ color:#7ee787;
 font-size:15px;
 
 }
+
+.journey{
+
+
+padding:80px 10%;
+
+text-align:center;
+
+}
+
+
+.steps{
+
+
+display:flex;
+
+justify-content:center;
+
+gap:30px;
+
+flex-wrap:wrap;
+
+}
+
+
+.step{
+
+
+background:#161b22;
+
+padding:30px;
+
+width:230px;
+
+border-radius:15px;
+
+border:1px solid #30363d;
+
+
+}
+
+
+.step h3{
+
+color:#58a6ff;
+
+font-size:35px;
+
+}
