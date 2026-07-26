@@ -4,187 +4,298 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Git & GitHub Workshop</title>
+  <title>Git & GitHub Workshop | Engineering Hub</title>
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
   <link rel="stylesheet" href="style.css" />
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 
 <body>
-  <!-- ================= Header ================= -->
 
-  <header>
-    <div class="logo">Git Workshop</div>
+  <!-- ================= Header ================= -->
+  <header class="navbar">
+    <a href="#" class="logo">
+      <i class="fab fa-github"></i>
+      <span>GitHub Engineering Hub</span>
+    </a>
 
     <nav>
       <a href="#"><i class="fas fa-house"></i> Home</a>
-      <a href="#"><i class="fas fa-book-open"></i>Courses</a>
-      <a href="#"><i class="fas fa-map"></i>Roadmap</a>
-      <a href="#"><i class="fas fa-users"></i>Community</a>
-      <a href="#"><i class="fas fa-envelope"></i>Contact</a>
+      <a href="#topics"><i class="fas fa-code"></i> Topics</a>
+      <a href="#roadmap"><i class="fas fa-road"></i> Roadmap</a>
+      <a href="#stats"><i class="fas fa-chart-line"></i> Stats</a>
+      <a href="#reviews"><i class="fas fa-comments"></i> Community</a>
+      <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
     </nav>
 
-    <button class="login-btn">Login</button>
+    <a href="#contact" class="login-btn">
+      <i class="fas fa-rocket"></i> Join Workshop
+    </a>
   </header>
 
   <!-- ================= Hero ================= -->
-
   <section class="hero">
-    <span class="badge"> Version Control </span>
+    <div class="hero-content">
+      <span class="badge">
+        <i class="fab fa-github"></i> Version Control Mastery
+      </span>
 
-    <h1>Learn Git & GitHub Like Professionals</h1>
+      <h1>
+        Master Git.<br>
+        <span class="gradient-text">Collaborate Like a Dev.</span>
+      </h1>
 
-    <p>Master version control and collaborate with teams using Git Flow.</p>
+      <p>
+        Learn professional Git workflows, branching strategies, and teamwork practices used by real software engineering teams.
+      </p>
 
-    <div class="hero-buttons">
-      <button class="primary-btn">Start Learning</button>
+      <div class="hero-buttons">
+        <a href="#roadmap" class="primary-btn">
+          Start Challenge <i class="fas fa-arrow-right"></i>
+        </a>
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="secondary-btn">
+          <i class="fab fa-github"></i> View Repository
+        </a>
+      </div>
+    </div>
 
-      <button class="secondary-btn">GitHub Repository</button>
+    <!-- Interactive Code Box -->
+    <div class="terminal">
+      <div class="terminal-header">
+        <span class="dot red"></span>
+        <span class="dot yellow"></span>
+        <span class="dot green"></span>
+        <span class="terminal-title">bash - git status</span>
+      </div>
+      <pre><code><span class="cmd">$ git init</span>
+<span class="comment"># Initialized empty Git repository</span>
+
+<span class="cmd">$ git add .</span>
+<span class="cmd">$ git commit -m <span class="str">"feat: add dev workflow"</span></span>
+<span class="comment">[main 4f8a91c] feat: add dev workflow</span>
+
+<span class="cmd">$ git push origin main</span>
+<span class="success"><i class="fas fa-check-circle"></i> Everything up-to-date!</span></code></pre>
     </div>
   </section>
 
-  <!-- ================= Features ================= -->
-
-  <section class="features">
-    <h2>Workshop Topics</h2>
+  <!-- ================= Workshop Topics ================= -->
+  <section class="features" id="topics">
+    <div class="section-header">
+      <h2><i class="fas fa-layer-group"></i> Workshop Topics</h2>
+      <p>Core foundations to take you from beginner to professional</p>
+    </div>
 
     <div class="cards">
       <div class="card">
+        <div class="card-icon"><i class="fas fa-code-branch"></i></div>
         <h3>Version Control</h3>
-
-        <p>Learn why version control is important.</p>
+        <p>Understand history tracking, rollbacks, and why VCS is vital for software stability.</p>
       </div>
 
       <div class="card">
-        <h3>Git Basics</h3>
-
-        <p>Commits, branches and merging.</p>
+        <div class="card-icon"><i class="fas fa-terminal"></i></div>
+        <h3>Git Fundamentals</h3>
+        <p>Master essential commands: commits, staging area, branching, and conflict merging.</p>
       </div>
 
       <div class="card">
-        <h3>GitHub</h3>
-
-        <p>Remote repositories and collaboration.</p>
+        <div class="card-icon"><i class="fab fa-github-alt"></i></div>
+        <h3>GitHub Collaboration</h3>
+        <p>Manage remote repos, issue tracking, code reviews, and Pull Request etiquette.</p>
       </div>
 
       <div class="card">
-        <h3>Git Flow</h3>
+        <div class="card-icon"><i class="fas fa-network-wired"></i></div>
+        <h3>Git Flow Workflow</h3>
+        <p>Adopt enterprise branching strategies for releases, features, and hotfixes.</p>
+      </div>
+    </div>
+  </section>
 
-        <p>Professional workflow used in companies.</p>
+  <!-- ================= Learning Journey ================= -->
+  <section class="journey" id="roadmap">
+    <div class="section-header">
+      <h2><i class="fas fa-map-signs"></i> Your Git Journey</h2>
+      <p>A step-by-step roadmap to master version control</p>
+    </div>
+
+    <div class="steps">
+      <div class="step">
+        <span class="step-num">01</span>
+        <div class="step-icon"><i class="fas fa-book-open"></i></div>
+        <h4>Git Basics</h4>
+        <p>Learn core terminal syntax and local repo structures.</p>
+      </div>
+
+      <div class="step">
+        <span class="step-num">02</span>
+        <div class="step-icon"><i class="fas fa-code-merge"></i></div>
+        <h4>Branching</h4>
+        <p>Isolate features safely without disrupting main code.</p>
+      </div>
+
+      <div class="step">
+        <span class="step-num">03</span>
+        <div class="step-icon"><i class="fas fa-code-pull-request"></i></div>
+        <h4>Pull Requests</h4>
+        <p>Review peer code and resolve merge conflicts smoothly.</p>
+      </div>
+
+      <div class="step">
+        <span class="step-num">04</span>
+        <div class="step-icon"><i class="fas fa-shield-halved"></i></div>
+        <h4>Git Flow</h4>
+        <p>Master production release workflows and automation.</p>
       </div>
     </div>
   </section>
 
   <!-- ================= Statistics ================= -->
-
-  <section class="statistics">
-    <h2>Workshop Statistics</h2>
+  <section class="statistics" id="stats">
+    <div class="section-header">
+      <h2><i class="fas fa-chart-pie"></i> Workshop Impact</h2>
+      <p>Real numbers from our active developer community</p>
+    </div>
 
     <div class="stats">
       <div class="stat">
+        <i class="fas fa-user-graduate stat-icon"></i>
         <h3>150+</h3>
-
-        <p>Students</p>
+        <p>Active Students</p>
       </div>
 
       <div class="stat">
+        <i class="fas fa-folder-tree stat-icon"></i>
         <h3>45</h3>
-
-        <p>Repositories</p>
+        <p>Repositories Created</p>
       </div>
 
       <div class="stat">
+        <i class="fas fa-cube stat-icon"></i>
         <h3>900+</h3>
-
-        <p>Commits</p>
+        <p>Total Commits</p>
       </div>
 
       <div class="stat">
-        <h3>35</h3>
-
-        <p>Pull Requests</p>
+        <i class="fas fa-code-compare stat-icon"></i>
+        <h3>35+</h3>
+        <p>Merged PRs</p>
       </div>
     </div>
   </section>
 
   <!-- ================= Testimonials ================= -->
-
-  <section class="testimonials">
-    <h2>Students Feedback</h2>
+  <!-- ================= Testimonials ================= -->
+  <section class="testimonials" id="reviews">
+    <div class="section-header">
+      <h2><i class="fas fa-quote-left"></i> Student Feedback</h2>
+      <p>What engineers say about our hands-on challenges</p>
+    </div>
 
     <div class="reviews">
       <div class="review">
-        <h3>Mohammed</h3>
-
-        <p>Git became much easier after this workshop.</p>
-      </div>
-
-      <div class="review">
-        <h3>Ahmed</h3>
-
-        <p>The practical challenges were amazing.</p>
-      </div>
-      <div class="review">
-        <h3>Alshaimaa</h3>
-
-        <p>it`s pit challenging to me.</p>
-      </div>
-
-      <div class="review">
-
-        <h3>Ali</h3>
-
-        <p>I finally understood Pull Requests.</p>
-      </div>
-
-      <div class="review">
-        <h3>Laila</h3>
-        <p>Great hands-on Git workflow challenge! It really felt like working in a real software engineering team.
-        </p>
-      </div>
-      <div class="review">
-        <h3>Million</h3>
-        <p>The Git workflow challenge was incredibly exciting and helped me master branches!</p>
-      </div>
-          <p>I finally understood Pull Requests.</p>
+        <div class="user-meta">
+          <div class="avatar"><i class="fas fa-user"></i></div>
+          <h3>Mohammed</h3>
         </div>
+        <p>"Git became much easier after this workshop. The terminal exercise cleared up all my confusion!"</p>
+      </div>
 
-        <div class="review">
-          <h3>Doaa</h3>
-
-          <p>I really liked the combination of Git, coding, and UI improvements.</p>
+      <div class="review">
+        <div class="user-meta">
+          <div class="avatar"><i class="fas fa-user"></i></div>
+          <h3>Ahmed</h3>
         </div>
-      <div class="review">
-        <h3>Ahmed-altamimi</h3>
-
-        <p>Only the project manager should review, approve, merge, or reject pull requests if there are conflicts or
-          issues.</p>
-      </div>
-      <div class="review">
-        <h3>AmooOta</h3>
-
-        <p>Here we learned how to collaborate via GitHub, thank you!!</p>
+        <p>"The practical challenges were amazing. Solving real merge conflicts was a game changer."</p>
       </div>
 
+      <div class="review">
+        <div class="user-meta">
+          <div class="avatar"><i class="fas fa-user"></i></div>
+          <h3>Alshaimaa</h3>
+        </div>
+        <p>"It was a bit challenging at first, but working step-by-step made everything click."</p>
+      </div>
+
+      <div class="review">
+        <div class="user-meta">
+          <div class="avatar"><i class="fas fa-user"></i></div>
+          <h3>Ali</h3>
+        </div>
+        <p>"I finally understood how Pull Requests and code reviews work in real engineering teams."</p>
+      </div>
+
+      <div class="review">
+        <div class="user-meta">
+          <div class="avatar"><i class="fas fa-user"></i></div>
+          <h3>Laila</h3>
+        </div>
+        <p>"Great hands-on Git workflow challenge! It really felt like working in an enterprise environment."</p>
+      </div>
+
+      <div class="review">
+        <div class="user-meta">
+          <div class="avatar"><i class="fas fa-user"></i></div>
+          <h3>Ahmed Altamimi</h3>
+        </div>
+        <p>"Learning role-based PR approvals and repo protection rules was incredibly insightful."</p>
+      </div>
+
+      <!-- التقييمات الجديدة -->
+      <div class="review">
+        <div class="user-meta">
+          <div class="avatar"><i class="fas fa-user"></i></div>
+          <h3>AmooOta</h3>
+        </div>
+        <p>"Here we learned how to collaborate via GitHub, thank you!!"</p>
+      </div>
+
+      <div class="review">
+        <div class="user-meta">
+          <div class="avatar"><i class="fas fa-user"></i></div>
+          <h3>Abdullah</h3>
+        </div>
+        <p>"Amazing Git workshop experience. My suggestion: add more real-world conflict scenarios and team collaboration tasks."</p>
+      </div>
     </div>
   </section>
 
   <!-- ================= Contact ================= -->
+  <section class="contact" id="contact">
+    <div class="contact-card">
+      <h2><i class="fas fa-paper-plane"></i> Get In Touch</h2>
+      <p>Have questions about the workshop? Drop us a line or check out our GitHub organisation.</p>
 
-  <section class="contact">
-    <h2>Contact Us</h2>
-
-    <p>Email : workshop@example.com</p>
-
-    <p>GitHub : github.com/example</p>
+      <div class="contact-details">
+        <a href="mailto:workshop@example.com" class="contact-item">
+          <i class="fas fa-envelope"></i> workshop@example.com
+        </a>
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="contact-item">
+          <i class="fab fa-github"></i> github.com/example
+        </a>
+      </div>
+    </div>
   </section>
 
   <!-- ================= Footer ================= -->
-
   <footer>
-    <p>Git & GitHub Workshop © 2026</p>
+    <div class="footer-content">
+      <p><i class="fab fa-github"></i> Git & GitHub Engineering Workshop © 2026</p>
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
   </footer>
+
 </body>
 
 </html>
